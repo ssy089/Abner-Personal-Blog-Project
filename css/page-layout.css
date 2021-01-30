@@ -1,0 +1,94 @@
+html {
+    /*min-height: 100%*/
+}
+
+aside a {
+    color: #fff;
+}
+
+aside img { 
+    height: 30px;
+    width: 30px;
+}
+
+body {
+    background-color: #2f4f4f;
+    display: grid;
+    grid-auto-rows: minmax(max-content, auto);
+    grid-template-columns: repeat(5, 1fr);
+    /*grid-template-rows: min-content repeat(4, 1fr) min-content;*/
+    grid-template-areas:
+    "hd hd hd hd hd"
+    "ar ar ar ar as"
+    "ar ar ar ar as"
+    "ar ar ar ar as"
+    "ar ar ar ar as"
+    "ft ft ft ft ft";
+    height: 100%;
+    margin: 0;
+    /*margin-bottom: 0;*/
+}
+
+figure {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption {
+    width: 200px;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+header {
+    grid-area: hd;
+}
+
+h1 {
+    background-image: url("../images/Javascript_Code.jpeg");
+    background-size: cover;
+    color: #fff;
+    font-size: 4em;
+    margin: 0;
+}
+
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #008000;
+    margin: 0;
+}
+
+nav > a {
+    color: #fff;
+}
+
+hr {
+    /*grid-area: hr;*/
+}
+
+article,
+section {
+    background-color: #c0c0c0;
+    grid-area: ar;
+    padding: 1em;
+}
+
+aside {
+    background-image: url("../images/Blue_Computing_Background2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /*filter: brightness(50%);*/
+    grid-area: as;
+}

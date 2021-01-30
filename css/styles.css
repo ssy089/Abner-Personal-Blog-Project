@@ -1,0 +1,24 @@
+@import "page-layout.css";
+@import "blog-cards.css";
+@import "post-layout.css";
+
+
+
+
+footer {
+    background-color: #008000;
+    color: #fff;
+    grid-area: ft;
+}
+
+.gallery {
+    display: grid;
+    grid-auto-rows: minmax(min-content, auto);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.separate-links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

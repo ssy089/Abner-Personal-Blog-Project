@@ -1,0 +1,40 @@
+.about-author {
+    background-color: #808080;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: min-content 80px;
+    grid-template-areas: 
+    "h4 h4"
+    "img pg";
+    padding: 1em;
+}
+.about-author > h4 {
+    grid-area: h4;
+    margin-block-start: 0;
+}
+
+.about-author > figure {
+    grid-area: img;
+    height: 60px;
+    margin: 0;
+    width: 60px;
+}
+
+.about-author img {
+    height: 60px;
+    width: 60px;
+}
+
+.about-author > p {
+    grid-area: pg;
+    margin: 0;
+}
+
+.post-image > figcaption {
+    width: 800px;
+}
+
+.post-image > img {
+    height: 500px;
+    width: 800px;
+}
