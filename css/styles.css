@@ -2,19 +2,26 @@
 @import "blog-cards.css";
 @import "post-layout.css";
 
-
-
-
-footer {
-    background-color: #008000;
-    color: #fff;
-    grid-area: ft;
+figure {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.gallery {
-    display: grid;
-    grid-auto-rows: minmax(min-content, auto);
-    grid-template-columns: repeat(3, 1fr);
+figcaption {
+    width: 200px;
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+img {
+    height: 200px;
+    width: 200px;
 }
 
 .separate-links {
