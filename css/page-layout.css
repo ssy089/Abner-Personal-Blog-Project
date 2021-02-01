@@ -81,3 +81,44 @@ hr {
     grid-auto-rows: minmax(min-content, auto);
     grid-template-columns: repeat(3, 1fr);
 }
+
+@media(max-width: 600px) {
+    aside {
+        display: flex;
+        background-image: url("../images/Blue_Computing_Background2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-size: 1.5em;
+        grid-area: as;
+    }
+
+    aside a {
+        color: #fff;
+    }
+
+    aside img { 
+        height: 30px;
+        width: 30px;
+    }
+    
+    body {
+        background-color: #2f4f4f;
+        display: grid;
+        /*grid-auto-rows: minmax(max-content, auto);*/
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: min-content repeat(4, 1fr) min-content;
+        grid-template-areas:
+        "hd hd hd hd hd"
+        "ar ar ar ar ar"
+        "ar ar ar ar ar"
+        "ar ar ar ar ar"
+        "as as as as as"
+        "ft ft ft ft ft";
+        min-height: 100vh;
+        margin: 0;
+    }
+}

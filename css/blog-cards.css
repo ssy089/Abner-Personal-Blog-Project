@@ -71,3 +71,11 @@ blockquote {
     height: 50px;
     width: 50px;
 }
+
+@media(max-width: 600px) {
+    .blog-post-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
