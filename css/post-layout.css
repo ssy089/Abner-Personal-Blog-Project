@@ -38,3 +38,10 @@
     height: 500px;
     width: 800px;
 }
+
+@media(max-width: 600px) {
+    .post-image > img {
+        height: 250px;
+        width: 400px;
+    }
+}

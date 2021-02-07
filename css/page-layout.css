@@ -22,11 +22,11 @@ aside img {
 }
 
 body {
-    background-color: #2f4f4f;
+    background-color: #c0c0c0;
     display: grid;
     /*grid-auto-rows: minmax(max-content, auto);*/
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: min-content repeat(4, 1fr) min-content;
+    grid-template-rows: min-content repeat(4, 25fr) min-content;
     grid-template-areas:
     "hd hd hd hd hd"
     "ar ar ar ar as"
@@ -77,12 +77,18 @@ hr {
 }
 
 .gallery {
+    background-color: #c0c0c0;
     display: grid;
+    grid-area: ar;
     grid-auto-rows: minmax(min-content, auto);
     grid-template-columns: repeat(3, 1fr);
 }
 
-@media(max-width: 600px) {
+.gallery figure {
+    /*margin: 3em;*/
+}
+
+@media (max-width: 600px) {
     aside {
         display: flex;
         background-image: url("../images/Blue_Computing_Background2.jpg");
@@ -98,19 +104,32 @@ hr {
 
     aside a {
         color: #fff;
+	font-size: 0.5em;
+    }
+
+    aside figcaption {
+        width: min-content;
+    }
+
+    aside figure {
+        margin: 1em;
+    }
+
+    aside h4 {
+        font-size: 0.5em;
     }
 
     aside img { 
         height: 30px;
         width: 30px;
     }
-    
+
     body {
-        background-color: #2f4f4f;
+        background-color: #c0c0c0;
         display: grid;
         /*grid-auto-rows: minmax(max-content, auto);*/
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: min-content repeat(4, 1fr) min-content;
+        grid-template-rows: min-content repeat(3, 1fr) min-content min-content;
         grid-template-areas:
         "hd hd hd hd hd"
         "ar ar ar ar ar"
@@ -120,5 +139,22 @@ hr {
         "ft ft ft ft ft";
         min-height: 100vh;
         margin: 0;
+    }
+
+    .gallery {
+        background-color: #c0c0c0;
+        display: grid;
+	grid-area: ar;
+        grid-auto-rows: minmax(min-content, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery figure {
+        margin: 0.5em;
+    }
+
+    .gallery img {
+        height: 100px;
+	width: 100px;
     }
 }

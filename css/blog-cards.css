@@ -39,6 +39,7 @@ blockquote {
     border-radius: 1em;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2em;
     padding: 1em 1em 1em 1em;
 }
 
