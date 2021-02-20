@@ -2,6 +2,15 @@
 @import "blog-cards.css";
 @import "post-layout.css";
 
+blockquote {
+    background-color: #808080;
+    padding: 1em;
+}
+
+em {
+    text-decoration: underline;
+}
+
 figure {
     align-items: center;
     display: flex;
@@ -9,6 +18,7 @@ figure {
 }
 
 figcaption {
+    font-style: italic;
     width: 200px;
     text-align: center;
 }
@@ -22,6 +32,16 @@ h4 {
 img {
     height: 200px;
     width: 200px;
+}
+
+.bio-text-section > p {
+    font: 12px, Times New Roman, serif;
+}
+
+.bio-top-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .separate-links {

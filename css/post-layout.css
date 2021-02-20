@@ -3,11 +3,12 @@
     display: grid;
     grid-template-columns: 80px 1fr;
     grid-template-rows: min-content min-content;
-    grid-template-areas: 
+    grid-template-areas:
     "h4 h4"
     "img pg";
     padding: 1em;
 }
+
 .about-author > h4 {
     grid-area: h4;
     margin-block-start: 0;
@@ -30,6 +31,10 @@
     margin: 0;
 }
 
+.article-text > p {
+    font: 12px, Times New Roman, serif;
+}
+
 .post-image > figcaption {
     width: 800px;
 }
@@ -43,5 +48,12 @@
     .post-image > img {
         height: 250px;
         width: 400px;
+    }
+}
+
+@media(min-width: 601px) and (max-width: 1200px) {
+    .post-image > img {
+        height: 350px;
+	width: 350px;
     }
 }

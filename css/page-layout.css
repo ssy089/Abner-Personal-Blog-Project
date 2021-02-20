@@ -1,14 +1,9 @@
-html {
-    /*min-height: 100%*/
-}
-
 aside {
     background-image: url("../images/Blue_Computing_Background2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    /*filter: brightness(50%);*/
     grid-area: as;
 }
 
@@ -16,7 +11,7 @@ aside a {
     color: #fff;
 }
 
-aside img { 
+aside img {
     height: 30px;
     width: 30px;
 }
@@ -24,7 +19,6 @@ aside img {
 body {
     background-color: #c0c0c0;
     display: grid;
-    /*grid-auto-rows: minmax(max-content, auto);*/
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: min-content repeat(4, 25fr) min-content;
     grid-template-areas:
@@ -36,7 +30,6 @@ body {
     "ft ft ft ft ft";
     min-height: 100vh;
     margin: 0;
-    /*margin-bottom: 0;*/
 }
 
 footer {
@@ -64,10 +57,8 @@ nav {
 
 nav > a {
     color: #fff;
-}
-
-hr {
-    /*grid-area: hr;*/
+    font-size: 1.25em;
+    margin: 0 0.5em;
 }
 
 .page-content {
@@ -84,11 +75,7 @@ hr {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.gallery figure {
-    /*margin: 3em;*/
-}
-
-@media (max-width: 600px) {
+@media(max-width: 600px) {
     aside {
         display: flex;
         background-image: url("../images/Blue_Computing_Background2.jpg");
@@ -119,7 +106,7 @@ hr {
         font-size: 0.5em;
     }
 
-    aside img { 
+    aside img {
         height: 30px;
         width: 30px;
     }
@@ -127,7 +114,6 @@ hr {
     body {
         background-color: #c0c0c0;
         display: grid;
-        /*grid-auto-rows: minmax(max-content, auto);*/
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: min-content repeat(3, 1fr) min-content min-content;
         grid-template-areas:
@@ -156,5 +142,49 @@ hr {
     .gallery img {
         height: 100px;
 	width: 100px;
+    }
+}
+
+@media(min-width: 601px) and (max-width: 1200px) {
+    body {
+        background-color: #c0c0c0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: min-content repeat(3, 1fr) min-content;
+        grid-template-areas:
+        "hd hd hd hd hd"
+        "ar ar ar ar as"
+        "ar ar ar ar as"
+        "ar ar ar ar as"
+        "ar ar ar ar as"
+        "ft ft ft ft ft";
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    aside * {
+        margin: 1em 0;
+    }
+
+    .gallery {
+        background-color: #c0c0c0;
+        display: grid;
+	grid-area: ar;
+        grid-auto-rows: minmax(min-content, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery figcaption {
+        font-size: 0.75em;
+	width: 150px;
+    }
+
+    .gallery figure {
+        margin: 0.5em;
+    }
+
+    .gallery img {
+        height: 50%;
+	width: 75%;
     }
 }
